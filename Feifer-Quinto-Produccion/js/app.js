@@ -154,21 +154,19 @@ function diasCriticosProduccion(){
 }
 
 function diasrepetidosProduccion(){
-    let precioactual = 0;
-    let preciosiguiente= 0;
-    let rep =0;
-    let respuesta = '';
-    for(let i =0; i < vectorproduccion.length-1 ; i++){
-        precioactual = vectorproduccion[i]
-        preciosiguiente = vectorproduccion[i+1]
-        if( precioactual == preciosiguiente){
-            rep++
-        } if(rep > 1){
-            respuesta = 'Existen dias con produccion repetida'
-
-        }else{
-            respuesta = 'No existen dias con produccion repetida'
+    let rep = 0;
+    
+    for(let i = 0; i < vectorproduccion.length; i++){
+        
+        for(let j = i + 1; j < vectorproduccion.length; j++){
+            
+            if(vectorproduccion[i] === vectorproduccion[j]){
+                rep++;
+            }
         }
+    } if(rep > 0){
+        return 'Existen días con producción repetida';
+    } else {
+        return 'No existen días con producción repetida';
     }
-    return respuesta
 }
