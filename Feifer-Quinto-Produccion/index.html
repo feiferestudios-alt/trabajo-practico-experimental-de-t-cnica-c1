@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control de producción</title>
+</head>
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="2">Control de Producción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Dimension Dias</td>
+                <td>
+                    <select id="id-select-dias">
+                        <option value="5" selected>5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <button id="id-btn-cargar-produccion">Cargar Producción</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-presentar-produccion">Presentar</button>
+                </td>
+                <td>
+                    <textarea name="" id="id-listado-produccion" rows="3" readonly>
+                    </textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-mayor-produccion">mayor Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-mayor-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-menor-produccion">menor Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-menor-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+                     <tr>
+                <td>
+                    <button id="id-btn-suma-produccion">suma Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-suma-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button id="id-btn-promedio-produccion"> Promedio de Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-promedio-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    <button id="id-btn-encima-promedio-produccion"> por encima Promedio Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-encima-promedio-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+             <tr>
+                <td>
+                    <button id="id-btn-dias-criticos-produccion"> Dias Criticos Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-dias-criticos-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+              <tr>
+                <td>
+                    <button id="id-btn-dias-repetidos-produccion"> Dias Repetidos Produccion</button>
+                </td>
+                <td>
+                    <input type="text" id="id-txt-dias-repetidos-produccion" placeholder="0" readonly>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+
+    <script type="module" src="./js/app.js"></script>
+</body>
+</html>
